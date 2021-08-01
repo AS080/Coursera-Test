@@ -1,0 +1,113 @@
+body {
+  font-size: 16px;
+  color: #000;
+  background-color: #aaaacc;
+  font-family: "Times New Roman", Times, sans-serif;
+}
+
+/** HEADER **/
+#site-nav {
+  background-color: #557c3e;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: Arial, Helvetica, serif;
+  color: #f6b319;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  font-family: Arial, Helvetica, serif;
+  color: #f0b010;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  text-align: center;
+  border-bottom: 0.5px solid black;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #aaaacc;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+
+/* HOME PAGE */
+.container .row {
+  box-shadow: 0 0 10px #7777ee;
+  border: 2px solid #aaaaff;
+}
+
+  #main-content {
+    margin-top: 30px;
+  }
+/* END HOME PAGE */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 20px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 20px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  /* End Header */
+
+  /* Home Page */
+
+  #main-content {
+    padding: 0 50px;
+    margin:  30px 20px 0;
+  }
+
+  .container .row {
+    padding: 0 10px;
+  }
+}
