@@ -1,15 +1,16 @@
 body {
   font-size: 16px;
-  color: #000;
-  background-color: #aaaacc;
-  font-family: "Times New Roman", Times, sans-serif;
+  background-color: #143D59;
+  color: white;
 }
 
 /** HEADER **/
-#site-nav {
-  background-color: #557c3e;
+.navbar {
+  border:  none;
+  background-color: #F4B41A;
+  color: #61122F;
   border-radius: 0;
-  border: 0;
+
 }
 
 .navbar-brand {
@@ -17,9 +18,10 @@ body {
 }
 .navbar-brand h1 { /* Restaurant name */
   font-family: Arial, Helvetica, serif;
-  color: #f6b319;
+  color: #557c3e;
   font-size: 1.5em;
   text-transform: uppercase;
+  text-align: left;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
   margin-top: 0;
@@ -28,19 +30,17 @@ body {
 }
 
 #nav-list {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 #nav-list a {
   font-family: Arial, Helvetica, serif;
-  color: #f0b010;
+  color: #557c3e;
   font-size: 1.5em;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
   margin-top: 0;
   margin-bottom: 0;
   line-height: .75;
   text-align: center;
-  border-bottom: 0.5px solid black;
+  border-bottom: 0.25px solid gray;
 }
 #nav-list a:hover {
   background: #E7E7E7;
@@ -57,13 +57,23 @@ body {
 
 
 /* HOME PAGE */
+
+.cont {
+  margin-top: -10px;
+  margin-bottom:  20px;
+}
+
 .container .row {
-  box-shadow: 0 0 10px #7777ee;
-  border: 2px solid #aaaaff;
+  background-color: #557c3e;
+}
+
+h2 {
+   color: #557c3e;
+   font-weight: bold;
 }
 
   #main-content {
-    margin-top: 30px;
+    width: 90%;
   }
 /* END HOME PAGE */
 
@@ -71,7 +81,6 @@ body {
 @media (min-width: 1200px) {
 
 }
-
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -86,28 +95,18 @@ body {
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /* Header */
-  .navbar-brand {
-    padding-top: 20px;
-    height: 80px;
-  }
-  .navbar-brand h1 { /* Restaurant name */
-    padding-top: 20px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
-  }
-
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
   }
+
+   #nav-list a:hover {
+    background-color: #969F39;
+ }
   /* End Header */
 
   /* Home Page */
-
-  #main-content {
-    padding: 0 50px;
-    margin:  30px 20px 0;
-  }
-
   .container .row {
     padding: 0 10px;
   }
+  /* End Home Page */
 }
